@@ -25,12 +25,6 @@ typedef struct my_regex_item
 
 my_regex_item* my_regex_item_init(int type, const char* name);
 void my_regex_item_print(my_regex_item* root, int INDENT);
-/** int my_regex_item_add_level(my_regex_item* self, my_regex_item* item);
-my_regex_item* my_regex_item_get_child(my_regex_item* self);
-my_regex_item* my_regex_item_index_child(my_regex_item* self, unsigned int index);
-my_regex_item* my_regex_item_add_child(my_regex_item* self, my_regex_item* item);
-my_regex_item* my_regex_item_remove_child(my_regex_item* self);
-int my_regex_item_graft(my_regex_item* self);**/
 
 typedef struct my_regex_checker
 {
@@ -42,8 +36,5 @@ typedef struct my_regex_checker
 
 my_regex_checker* my_regex_checker_init(const char* str1);
 int my_regex_checker_verify(my_regex_checker* self, const char* str);
-/**void my_regex_checker_load(my_regex_checker* self);
-int my_regex_checker_verify_outer(my_regex_checker* self, my_regex_item* item);
-int my_regex_checker_verify_inner(my_regex_checker* self, my_regex_item* item);**/
 
 #endif
